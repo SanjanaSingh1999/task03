@@ -1,0 +1,6 @@
+rg_name              = "cmtr-5f0gvlzp-mod3-rg"
+student_email        = "sanjana_singh1@epam.com"
+storageaccount_name  = "cmtr5f0gvlzpsa1746708658"
+vnet_name            = "cmtr-5f0gvlzp-mod3-vnet"
+subnet1_name         = "frontend"
+subnet2_name         = "backend"
