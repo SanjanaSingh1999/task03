@@ -1,29 +1,34 @@
 variable "rg_name" {
-  description = "Name of the existing resource group"
+  description = "The name of the existing Azure Resource Group."
   type        = string
 }
 
-variable "student_email" {
-  description = "Creator tag email"
+variable "location" {
+  description = "The Azure region where resources will be created."
   type        = string
 }
 
 variable "storageaccount_name" {
-  description = "Name of the storage account"
+  description = "The name of the Azure Storage Account."
   type        = string
 }
 
 variable "vnet_name" {
-  description = "Name of the virtual network"
+  description = "The name of the Azure Virtual Network."
   type        = string
 }
 
 variable "subnet1_name" {
-  description = "Name of the first subnet"
+  description = "The name of the first subnet (frontend) in the Virtual Network."
   type        = string
 }
 
 variable "subnet2_name" {
-  description = "Name of the second subnet"
+  description = "The name of the second subnet (backend) in the Virtual Network."
+  type        = string
+}
+
+variable "creator_tag" {
+  description = "The creator tag for all resources, typically the creator's email address."
   type        = string
 }
