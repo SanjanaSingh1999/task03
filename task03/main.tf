@@ -21,6 +21,9 @@ resource "azurerm_storage_account" "this" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
+  # Disable blob public access to comply with the policy
+  allow_blob_public_access = false
+
   tags = {
     Creator = var.creator_tag
   }
